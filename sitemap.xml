@@ -21,12 +21,17 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://epoxycustomcoatings.com/services.html#residential</loc>
+        <loc>https://epoxycustomcoatings.com/services.html#pmma</loc>
         <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://epoxycustomcoatings.com/services.html#commercial</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://epoxycustomcoatings.com/services.html#residential</loc>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
@@ -46,7 +51,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://epoxycustomcoatings.com/projects.html#reviews</loc>
+        <loc>https://epoxycustomcoatings.com/index.html#reviews</loc>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
