@@ -9,7 +9,7 @@
             author: 'Clark S.'
         },
         {
-            text: 'I\u2019ve been watching these men work their flooring magic for a while now, and I recently saw their craftsmanship at my sister-in-law\u2019s house. The work was absolutely incredible\u2014high quality and impressively time-efficient. Keep an eye out for these amazing guys whenever you need something done right!',
+            text: 'I\u2019ve been watching these men work their flooring magic for a while now, and I recently saw their craftsmanship at my sister-in-law\u2019s house. The work was absolutely incredible, high quality and impressively time-efficient. Keep an eye out for these amazing guys whenever you need something done right!',
             author: 'Nicole'
         }
     ];
@@ -27,7 +27,7 @@
     function renderReview(index) {
         activeIndex = index;
         textEl.textContent = '\u201C' + reviews[index].text + '\u201D';
-        authorEl.textContent = '\u2014 ' + reviews[index].author;
+        authorEl.textContent = reviews[index].author;
 
         dots.forEach(function (dot, i) {
             var isActive = i === index;
