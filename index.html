@@ -27,6 +27,9 @@
     <meta name="twitter:image" content="https://epoxycustomcoatings.com/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="images/homeHero-mobile.jpg" media="(max-width: 767px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/homeHero-desktop.jpg" media="(min-width: 768px)" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -39,7 +42,7 @@
     <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Main navigation">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo2.png" alt="Epoxy Custom Coatings">
+                <img src="images/logo2.png" alt="Epoxy Custom Coatings" width="1023" height="961" decoding="async">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,6 +77,11 @@
     <main id="main-content">
     <!-- HERO -->
     <section class="hero hero-home">
+        <picture class="hero-media">
+            <source media="(max-width: 767px)" srcset="images/homeHero-mobile.jpg" type="image/jpeg">
+            <source media="(min-width: 768px)" srcset="images/homeHero-desktop.jpg" type="image/jpeg">
+            <img src="images/homeHero-desktop.jpg" alt="" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+        </picture>
         <div class="hero-overlay"></div>
         <div class="container hero-inner">
             <div class="hero-copy">
@@ -159,7 +167,7 @@
                 <div class="col-md-6 col-lg-3">
                     <article class="service-card">
                         <div class="service-card-image">
-                            <img src="images/commercial.jpg" alt="Commercial and industrial epoxy floor coating">
+                            <img src="images/commercial.jpg" alt="Commercial and industrial epoxy floor coating" width="2048" height="1536" loading="lazy" decoding="async">
                             <div class="service-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><path d="M12 12v4M10 14h4"/></svg>
                             </div>
@@ -174,7 +182,7 @@
                 <div class="col-md-6 col-lg-3">
                     <article class="service-card">
                         <div class="service-card-image">
-                            <img src="images/warehouse.png" alt="Certified PMMA floor coating installation">
+                            <img src="images/warehouse.png" alt="Certified PMMA floor coating installation" width="1254" height="1254" loading="lazy" decoding="async">
                             <div class="service-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
                             </div>
@@ -189,7 +197,7 @@
                 <div class="col-md-6 col-lg-3">
                     <article class="service-card">
                         <div class="service-card-image">
-                            <img src="images/clinic.png" alt="ESD and specialty floor coatings">
+                            <img src="images/clinic.png" alt="ESD and specialty floor coatings" width="1254" height="1254" loading="lazy" decoding="async">
                             <div class="service-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M7 8V6a2 2 0 012-2h6a2 2 0 012 2v2"/><path d="M3 14h18"/></svg>
                             </div>
@@ -204,7 +212,7 @@
                 <div class="col-md-6 col-lg-3">
                     <article class="service-card">
                         <div class="service-card-image">
-                            <img src="images/garage.jpg" alt="Residential garage epoxy floor coating">
+                            <img src="images/garage.jpg" alt="Residential garage epoxy floor coating" width="1268" height="1241" loading="lazy" decoding="async">
                             <div class="service-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 10l9-6 9 6v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8z"/><path d="M9 22V12h6v10"/></svg>
                             </div>
@@ -237,9 +245,9 @@
             </div>
             <div class="col-lg-7 before-after-visual">
                 <div class="ba-slider">
-                    <img class="ba-img ba-after" src="images/after.jpg" alt="After epoxy coating">
+                    <img class="ba-img ba-after" src="images/after.jpg" alt="After epoxy coating" width="1536" height="864" loading="lazy" decoding="async">
                     <div class="ba-before-wrap">
-                        <img class="ba-img ba-before" src="images/before.jpg" alt="Before concrete floor">
+                        <img class="ba-img ba-before" src="images/before.jpg" alt="Before concrete floor" width="1920" height="1080" loading="lazy" decoding="async">
                     </div>
                     <div class="ba-label ba-label-before">Before</div>
                     <div class="ba-label ba-label-after">After</div>
@@ -368,7 +376,7 @@
             <div class="row g-4 g-lg-5">
                 <div class="col-lg-4">
                     <a class="footer-brand" href="index.html">
-                        <img src="images/logo.png" alt="Epoxy Custom Coatings">
+                        <img src="images/logo.png" alt="Epoxy Custom Coatings" width="2404" height="1624" loading="lazy" decoding="async">
                     </a>
                     <p class="footer-desc">Epoxy Custom Coatings is a family-owned Vancouver Island business with certified PMMA flooring installation through Plasti-Chemie Germany. We specialize in commercial, industrial, and specialty epoxy and resin coating systems, with residential services also available.</p>
                     <div class="footer-social">
