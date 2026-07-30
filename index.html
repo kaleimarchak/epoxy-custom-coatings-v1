@@ -27,13 +27,11 @@
     <meta name="twitter:image" content="https://epoxycustomcoatings.com/images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preload" as="image" href="images/homeHero-mobile.jpg" media="(max-width: 767px)" fetchpriority="high">
     <link rel="preload" as="image" href="images/homeHero-desktop.jpg" media="(min-width: 768px)" fetchpriority="high">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -45,7 +43,7 @@
                 <img src="images/logo2.png" alt="Epoxy Custom Coatings" width="1023" height="961" decoding="async">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -53,7 +51,7 @@
                 <ul class="navbar-nav mx-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                        <a class="nav-link dropdown-toggle" href="services.html" role="button" aria-expanded="false">Services</a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="services.html#what-we-offer">What We Offer</a></li>
                             <li><a class="dropdown-item" href="services.html#commercial">Commercial &amp; Industrial</a></li>
@@ -120,7 +118,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="trust-item">
                         <div class="trust-icon">
-                            <i class="fa-regular fa-star"></i>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.2 1 5.8L12 16.9 6.8 19.7l1-5.8-4.3-4.2 5.9-.9L12 3.5z"/></svg>
                         </div>
                         <div>
                             <strong>5 Star Rating on Google</strong>
@@ -131,7 +129,7 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="trust-item">
                         <div class="trust-icon">
-                            <i class="fa-solid fa-user-group"></i>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="3.5"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a3.5 3.5 0 010 6.74"/></svg>
                         </div>
                         <div>
                             <strong>Family-Owned & Operated</strong>
@@ -175,14 +173,14 @@
                         <div class="service-card-body">
                             <h3>Commercial &amp; Industrial Flooring</h3>
                             <p>High-performance coatings for restaurants, warehouses, retail, manufacturing, healthcare, and other demanding commercial and industrial environments.</p>
-                            <a class="link-arrow" href="services.html#commercial">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a class="link-arrow" href="services.html#commercial">Commercial flooring details <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <article class="service-card">
                         <div class="service-card-image">
-                            <img src="images/warehouse.png" alt="Certified PMMA floor coating installation" width="1254" height="1254" loading="lazy" decoding="async">
+                            <img src="images/warehouse.jpg" alt="Certified PMMA floor coating installation" width="1000" height="1000" loading="lazy" decoding="async">
                             <div class="service-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6l7-4z"/><path d="M9 12l2 2 4-4"/></svg>
                             </div>
@@ -190,14 +188,14 @@
                         <div class="service-card-body">
                             <h3>Certified PMMA Flooring</h3>
                             <p>Ultra-fast-cure PMMA systems for facilities that need minimal downtime, including installs in extreme cold, certified through Plasti-Chemie Germany.</p>
-                            <a class="link-arrow" href="services.html#pmma">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a class="link-arrow" href="services.html#pmma">Certified PMMA details <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </article>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <article class="service-card">
                         <div class="service-card-image">
-                            <img src="images/clinic.png" alt="ESD and specialty floor coatings" width="1254" height="1254" loading="lazy" decoding="async">
+                            <img src="images/clinic.jpg" alt="ESD and specialty floor coatings" width="1000" height="1000" loading="lazy" decoding="async">
                             <div class="service-card-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M7 8V6a2 2 0 012-2h6a2 2 0 012 2v2"/><path d="M3 14h18"/></svg>
                             </div>
@@ -205,7 +203,7 @@
                         <div class="service-card-body">
                             <h3>ESD &amp; Specialty Coatings</h3>
                             <p>Static-control and specialty systems for labs, data centers, clinics, electronics manufacturing, and other sensitive environments.</p>
-                            <a class="link-arrow" href="services.html#esd">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a class="link-arrow" href="services.html#esd">ESD coating details <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </article>
                 </div>
@@ -220,7 +218,7 @@
                         <div class="service-card-body">
                             <h3>Residential Coatings</h3>
                             <p>Durable epoxy and polyaspartic finishes for garages, basements, workshops, patios, and outdoor living spaces.</p>
-                            <a class="link-arrow" href="services.html#residential">Learn More <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                            <a class="link-arrow" href="services.html#residential">Residential coatings details <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                         </div>
                     </article>
                 </div>
@@ -294,7 +292,7 @@
                 <div class="process-step">
                     <span class="process-num">03</span>
                     <div class="process-icon">
-                        <i class="fa-solid fa-paint-roller"></i>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="14" height="6" rx="1"/><path d="M17 6h2a2 2 0 012 2v1a3 3 0 01-3 3h-1"/><path d="M7 9v5a2 2 0 002 2h0a2 2 0 002-2v-1"/><path d="M11 18v2"/></svg>
                     </div>
                     <h3>Coating Installation</h3>
                     <p>Premium epoxy, polyaspartic, or specialty coating systems are professionally installed using proven techniques and industry-leading products.</p>
@@ -386,7 +384,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h4 class="footer-heading">Quick Links</h4>
+                    <h2 class="footer-heading">Quick Links</h2>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -397,7 +395,7 @@
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
-                    <h4 class="footer-heading">Services</h4>
+                    <h2 class="footer-heading">Services</h2>
                     <ul class="footer-links">
                         <li><a href="services.html#residential">Residential</a></li>
                         <li><a href="services.html#commercial">Commercial</a></li>
@@ -406,7 +404,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4">
-                    <h4 class="footer-heading">Contact Us</h4>
+                    <h2 class="footer-heading">Contact Us</h2>
                     <ul class="footer-contact">
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -414,7 +412,7 @@
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
-                            <a href="mailto:info@epoxycustomcoatings.com">info@epoxycustomcoatings.com</a>
+                            <a href="mailto:epoxycustomcoatings@gmail.com">epoxycustomcoatings@gmail.com</a>
                         </li>
                         <li>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-10a7 7 0 1114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
@@ -426,9 +424,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Epoxy Custom Coatings. All Rights Reserved.</p>
                 <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
+                    <a href="privacy.html">Privacy Policy</a>
                     <span>|</span>
-                    <a href="#">Terms of Service</a>
+                    <a href="terms.html">Terms of Service</a>
                 </div>
             </div>
         </div>
@@ -453,7 +451,7 @@
                 "name": "Epoxy Custom Coatings",
                 "url": "https://epoxycustomcoatings.com/",
                 "telephone": "+1-778-700-1095",
-                "email": "info@epoxycustomcoatings.com",
+                "email": "epoxycustomcoatings@gmail.com",
                 "image": "https://epoxycustomcoatings.com/images/logo.png",
                 "logo": "https://epoxycustomcoatings.com/images/logo.png",
                 "description": "Certified PMMA flooring installer and commercial/industrial epoxy contractor serving Vancouver Island. Specializing in kitchens, warehouses, manufacturing, and ESD environments.",
@@ -500,8 +498,7 @@
         ]
     }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="js/ba-slider.js"></script>
+        <script src="js/ba-slider.js"></script>
     <script src="js/testimonials.js"></script>
     <script src="js/nav.js"></script>
 </body>

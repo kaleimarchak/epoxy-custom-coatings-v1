@@ -1,0 +1,328 @@
+/* Lean layout: grid, navbar, utilities (replaces Bootstrap for this site) */
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+.row {
+    --gutter-x: 1.5rem;
+    --gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--gutter-y) * -1);
+    margin-right: calc(var(--gutter-x) * -0.5);
+    margin-left: calc(var(--gutter-x) * -0.5);
+}
+
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--gutter-x) * 0.5);
+    padding-left: calc(var(--gutter-x) * 0.5);
+    margin-top: var(--gutter-y);
+}
+
+.g-0 {
+    --gutter-x: 0;
+    --gutter-y: 0;
+}
+
+.g-4 {
+    --gutter-x: 1.5rem;
+    --gutter-y: 1.5rem;
+}
+
+.g-lg-5 {
+    --gutter-x: 1.5rem;
+    --gutter-y: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .g-lg-5 {
+        --gutter-x: 3rem;
+        --gutter-y: 3rem;
+    }
+}
+
+.col-6 { flex: 0 0 auto; width: 50%; }
+.col-12 { flex: 0 0 auto; width: 100%; }
+
+@media (min-width: 576px) {
+    .col-sm-6 { flex: 0 0 auto; width: 50%; }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 { flex: 0 0 auto; width: 33.33333333%; }
+    .col-md-6 { flex: 0 0 auto; width: 50%; }
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 { flex: 0 0 auto; width: 16.66666667%; }
+    .col-lg-3 { flex: 0 0 auto; width: 25%; }
+    .col-lg-4 { flex: 0 0 auto; width: 33.33333333%; }
+    .col-lg-5 { flex: 0 0 auto; width: 41.66666667%; }
+    .col-lg-6 { flex: 0 0 auto; width: 50%; }
+    .col-lg-7 { flex: 0 0 auto; width: 58.33333333%; }
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.d-inline-flex {
+    display: inline-flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .text-md-center {
+        text-align: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .text-lg-center {
+        text-align: center;
+    }
+
+    .align-items-lg-center {
+        align-items: center;
+    }
+
+    .flex-lg-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .order-lg-1 {
+        order: 1;
+    }
+
+    .order-lg-2 {
+        order: 2;
+    }
+}
+
+/* Navbar shell */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar > .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.35em;
+    height: 1.35em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-link {
+    display: block;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .navbar-expand-lg > .container {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    white-space: nowrap;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 0.4em;
+    vertical-align: 0.15em;
+    content: '';
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 12rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.dropdown-menu-dark {
+    background: var(--color-dark-alt, #111);
+    color: #fff;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: inherit;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-primary {
+    background: var(--color-green);
+    border-color: var(--color-green);
+    color: var(--color-white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background: var(--color-green-hover);
+    border-color: var(--color-green-hover);
+    color: var(--color-white);
+}
+
+.btn-dark {
+    background: var(--color-dark);
+    border-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+.btn-dark:hover,
+.btn-dark:focus-visible {
+    background: #333;
+    border-color: #333;
+    color: var(--color-white);
+}

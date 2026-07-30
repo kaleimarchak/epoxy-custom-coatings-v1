@@ -21,6 +21,16 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://epoxycustomcoatings.com/privacy.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://epoxycustomcoatings.com/terms.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
         <loc>https://epoxycustomcoatings.com/services.html#pmma</loc>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
