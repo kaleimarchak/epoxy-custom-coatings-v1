@@ -212,15 +212,21 @@
 
     .navbar-expand-lg > .container {
         flex-wrap: nowrap;
+        align-items: center;
     }
 
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
+        margin-left: auto;
     }
 
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
+        flex: 1 1 auto;
         flex-basis: auto;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.25rem;
     }
 
     .navbar-expand-lg .navbar-toggler {

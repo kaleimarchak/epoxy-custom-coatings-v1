@@ -393,18 +393,18 @@ a {
 }
 
 .hero-title {
-    font-size: clamp(1.65rem, 3.4vw + 0.35rem, 2.85rem);
+    font-size: clamp(1.4rem, 2.6vw + 0.25rem, 2.25rem);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: -0.02em;
-    line-height: 1.12;
-    margin-bottom: clamp(0.85rem, 2.5vw, 1.25rem);
+    line-height: 1.15;
+    margin-bottom: clamp(0.75rem, 2vw, 1.1rem);
 }
 
 .hero-title-sub {
     display: block;
-    margin-top: 0.35em;
-    font-size: 0.62em;
+    margin-top: 0.4em;
+    font-size: 0.72em;
     font-weight: 700;
     letter-spacing: 0.06em;
     opacity: 0.92;
@@ -1548,10 +1548,6 @@ body.gallery-lightbox-open {
     padding: clamp(2.5rem, 5vw, 4rem) 0 0;
 }
 
-.footer-desc {
-    max-width: min(320px, 100%);
-}
-
 .footer-brand img {
     height: clamp(64px, 12vw, 88px);
     width: auto;
@@ -1565,24 +1561,17 @@ body.gallery-lightbox-open {
     max-width: 320px;
 }
 
+.footer-affiliations {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1rem;
+}
+
 .footer-social {
     display: flex;
     gap: 0.75rem;
-}
-
-.footer-chamber {
-    display: inline-flex;
-    margin-top: 1.25rem;
-    transition: opacity var(--transition);
-}
-
-.footer-chamber:hover {
-    opacity: 0.88;
-}
-
-.footer-chamber img {
-    height: clamp(64px, 12vw, 80px);
-    width: auto;
+    align-items: center;
 }
 
 .footer-social a {
@@ -1605,6 +1594,21 @@ body.gallery-lightbox-open {
 .footer-social svg {
     width: 16px;
     height: 16px;
+}
+
+.footer-chamber {
+    display: inline-flex;
+    margin-top: 0;
+    transition: opacity var(--transition);
+}
+
+.footer-chamber:hover {
+    opacity: 0.88;
+}
+
+.footer-chamber img {
+    height: clamp(44px, 8vw, 52px);
+    width: auto;
 }
 
 .footer-heading {
@@ -1862,6 +1866,10 @@ body.gallery-lightbox-open {
     }
 
     .footer-social {
+        justify-content: center;
+    }
+
+    .footer-affiliations {
         justify-content: center;
     }
 
