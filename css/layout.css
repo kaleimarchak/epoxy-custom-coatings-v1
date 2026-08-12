@@ -86,6 +86,16 @@
     margin-right: auto;
 }
 
+.ms-auto {
+    margin-left: auto;
+}
+
+@media (min-width: 992px) {
+    .ms-lg-auto {
+        margin-left: auto;
+    }
+}
+
 .mt-3 {
     margin-top: 1rem;
 }
