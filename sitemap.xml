@@ -2,67 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://epoxycustomcoatings.com/</loc>
+        <lastmod>2026-10-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://epoxycustomcoatings.com/services.html</loc>
+        <lastmod>2026-10-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://epoxycustomcoatings.com/projects.html</loc>
+        <lastmod>2026-10-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://epoxycustomcoatings.com/contact.html</loc>
+        <lastmod>2026-10-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://epoxycustomcoatings.com/privacy.html</loc>
+        <lastmod>2026-10-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
         <loc>https://epoxycustomcoatings.com/terms.html</loc>
+        <lastmod>2026-10-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/services.html#pmma</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/services.html#commercial</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/services.html#residential</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/services.html#esd</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/services.html#coatings</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/services.html#about</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://epoxycustomcoatings.com/index.html#reviews</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
     </url>
 </urlset>

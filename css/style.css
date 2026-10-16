@@ -1596,19 +1596,31 @@ body.gallery-lightbox-open {
     height: 16px;
 }
 
-.footer-chamber {
+.footer-chamber,
+.footer-member {
     display: inline-flex;
     margin-top: 0;
     transition: opacity var(--transition);
 }
 
-.footer-chamber:hover {
+.footer-chamber:hover,
+.footer-member:hover {
     opacity: 0.88;
 }
 
 .footer-chamber img {
     height: clamp(44px, 8vw, 52px);
     width: auto;
+}
+
+.footer-member {
+    flex: 1 0 100%;
+    max-width: 260px;
+}
+
+.footer-member img {
+    width: 100%;
+    height: auto;
 }
 
 .footer-heading {
@@ -1873,9 +1885,15 @@ body.gallery-lightbox-open {
         justify-content: center;
     }
 
-    .footer-chamber {
+    .footer-chamber,
+    .footer-member {
         display: flex;
         justify-content: center;
+    }
+
+    .footer-member {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-brand {
